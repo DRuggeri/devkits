@@ -6,7 +6,6 @@ RUN apt-get update && apt-get -y install vim openssl curl ca-certificates wget g
   && echo 'set noautoindent' >> /etc/vim/vimrc.local \
   && echo 'set mouse=c' >> /etc/vim/vimrc.local \
   && echo 'set mouse=c' >> /usr/share/vim/vim81/defaults.vim \
-  && perl -pi -e 's/filetype plugin indent on/"filetype plugin indent on/g' /usr/share/vim/vim81/defaults.vim \
-  && npm install --global webpack webpack-cli webpack-dev-server
+  && perl -pi -e 's/filetype plugin indent on/"filetype plugin indent on/g' /usr/share/vim/vim81/defaults.vim
 
 CMD bash
